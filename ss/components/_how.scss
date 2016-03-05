@@ -32,6 +32,10 @@
 
 	.procrastination {
 		@include background(#E57373);
+
+		.container {
+			@include background(url(../images/Procrastination.svg) no-repeat center right);
+		}
 	}
 
 	.facebook {

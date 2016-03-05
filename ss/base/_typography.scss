@@ -45,9 +45,9 @@ a {
   text-decoration: none;
   transition: color $animation-duration $animation-timing;
 
-  &:active,
-  &:focus,
-  &:hover {
-    opacity: 0.8;
-  }
+  // &:active,
+  // &:focus,
+  // &:hover {
+  //   opacity: 0.8;
+  // }
 }

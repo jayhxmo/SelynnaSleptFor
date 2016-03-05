@@ -1,0 +1,16 @@
+.support {
+	@include padding(em(25px) 0 em(100px));
+	text-align: center;
+
+	header {
+		h1 {
+			font-size: em(54px);
+		}
+
+		p {
+			@include margin(0);
+			color: $color-boulder;
+			font-weight: 600;
+		}
+	}
+}

@@ -279,26 +279,27 @@ a {
   color: #229aff;
   text-decoration: none;
   transition: color 175ms ease; }
-  a:active, a:focus, a:hover {
-    opacity: 0.8; }
 
 button {
   height: 3.125em;
-  width: 12.5em;
+  width: 15.625em;
+  margin: 2.1875em auto;
   color: #fdfdfd;
-  background-color: #229aff;
+  background-color: #64B5F6;
   font-family: "brandon-grotesque", sans-serif;
-  font-size: 1em;
-  font-weight: 400;
+  font-size: 1.25em;
+  font-weight: 800;
   border: 0;
   border-radius: 3px;
   outline: none;
   text-transform: uppercase;
+  box-shadow: 0 0.3125em 0 #4987B2;
   -webkit-transition: all 175ms ease;
   -moz-transition: all 175ms ease;
   transition: all 175ms ease; }
   button:hover {
-    background-color: #1f8be6; }
+    margin: 2.375em auto 2em;
+    box-shadow: 0 0.125em 0 #4987B2; }
 
 input {
   height: 3.4375em;
@@ -464,6 +465,9 @@ html {
   .how .procrastination {
     background: #E57373;
     background: #E57373; }
+    .how .procrastination .container {
+      background: url(../images/Procrastination.svg) no-repeat center right;
+      background: url(../images/Procrastination.svg) no-repeat center right; }
   .how .facebook {
     background: #536b96;
     background: #536b96; }
@@ -488,5 +492,30 @@ html {
     .how .shower .title {
       margin: 0 0 0 auto;
       text-align: right; }
+
+.support {
+  padding: 1.5625em 0 6.25em;
+  text-align: center; }
+  .support header h1 {
+    font-size: 3.375em; }
+  .support header p {
+    margin: 0;
+    color: #777;
+    font-weight: 600; }
+
+.credits {
+  padding: 0.5625em 0;
+  background: #777;
+  background: #777;
+  text-align: center; }
+  .credits p {
+    color: #eee;
+    margin: 0;
+    font-weight: 700; }
+    .credits p a {
+      color: #fdfdfd;
+      text-decoration: underline; }
+      .credits p a:hover {
+        opacity: 0.8; }
 
 /*# sourceMappingURL=main.css.map */

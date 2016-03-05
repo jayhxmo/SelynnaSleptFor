@@ -1,0 +1,20 @@
+.credits {
+	@include padding(em(9px) 0);
+	@include background($color-boulder);
+	text-align: center;
+
+	p {
+		color: $color-gallery;
+		@include margin(0);
+		font-weight: 700;
+
+		a {
+			color: $color-white;
+			text-decoration: underline;
+
+			&:hover {
+				opacity: 0.8;
+			}
+		}
+	}
+}
