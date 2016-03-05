@@ -12,6 +12,15 @@
 	
 	h2.title {
 		font-size: em(72px);
+
+		a {
+			color: #7986CB;
+			
+			&:hover {
+				opacity: 1;
+				text-decoration: underline;
+			}
+		}
 	}
 
 	h3 {

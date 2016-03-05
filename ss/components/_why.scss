@@ -1,3 +1,55 @@
 .why {
-	@include padding(em(75px) 0 em(25px));
+	header {
+		@include margin(0 auto em(25px));
+	}
+
+	.health {
+		@include size(100% auto);
+		@include zero-box;
+
+		@include background(#81C784);
+		color: $color-white;
+
+		.title {
+			font-size: em(54px);
+			text-transform: uppercase;
+		}
+
+		p {
+			max-width: em(320px);
+			@include margin(0);
+			color: $color-gallery;
+			line-height: 1.6;
+		}
+
+		.container {
+			@include padding(em(75px) 0);
+			@include background(url(../images/health.svg) no-repeat right bottom);
+		}
+	}
+
+	.mood {
+		@include size(100% auto);
+		@include zero-box;
+
+		@include background(#FF8A65);
+		color: $color-white;
+
+		.title {
+			font-size: em(54px);
+			text-transform: uppercase;
+		}
+
+		p {
+			max-width: em(320px);
+			@include margin(0);
+			color: $color-gallery;
+			line-height: 1.6;
+		}
+
+		.container {
+			@include padding(em(75px) 0);
+			@include background(url(../images/health.svg) no-repeat right bottom);
+		}
+	}
 }

@@ -4,7 +4,7 @@ html {
   @media screen and (min-width: $bp-sm) { font-size: 65%; }
   @media screen and (min-width: $bp-md) { font-size: 70%; }
   @media screen and (min-width: $bp-lg) { font-size: 80; }
-  @media screen and (min-width: $bp-xl) { font-size: 92.5%; }
+@media screen and (min-width: $bp-xl) { font-size: 92.5%; }
 }
 
 body {
@@ -19,9 +19,10 @@ body {
 %header {
   @include margin(0);
 	@include padding(0);
-  font-family: $body-font;
+  font-family: $title-font;
   font-weight: 800;
   line-height: $body-lh;
+  letter-spacing: 0.05em;
 }
 
 @for $index from 1 through length($font-sizes) {
@@ -35,7 +36,7 @@ body {
 p {
   font-family: $body-font;
   font-size: em(28px);
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.8;
 }
 

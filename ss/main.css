@@ -248,7 +248,8 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
   font-family: "brandon-grotesque", sans-serif;
   font-weight: 800;
-  line-height: 1.25; }
+  line-height: 1.25;
+  letter-spacing: 0.05em; }
 
 h1 {
   font-size: 3em; }
@@ -271,7 +272,7 @@ h6 {
 p {
   font-family: "brandon-grotesque", sans-serif;
   font-size: 1.75em;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.8; }
 
 a {
@@ -329,7 +330,7 @@ html {
     display: table; }
 
 .container {
-  width: 50em;
+  width: 60em;
   max-width: 90%;
   margin-left: auto;
   margin-right: auto;
@@ -352,6 +353,11 @@ html {
     color: #777; }
   .intro h2.title {
     font-size: 4.5em; }
+    .intro h2.title a {
+      color: #7986CB; }
+      .intro h2.title a:hover {
+        opacity: 1;
+        text-decoration: underline; }
   .intro h3 {
     font-size: 3em; }
   .intro h4 {
@@ -376,9 +382,50 @@ html {
     max-width: 90%;
     margin: 0 auto;
     color: #777;
+    font-weight: 600;
     text-align: center; }
 
-.why {
-  padding: 4.6875em 0 1.5625em; }
+.why header {
+  margin: 0 auto 1.5625em; }
+.why .health {
+  height: auto;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #81C784;
+  background: #81C784;
+  color: #fdfdfd; }
+  .why .health .title {
+    font-size: 3.375em;
+    text-transform: uppercase; }
+  .why .health p {
+    max-width: 20em;
+    margin: 0;
+    color: #eee;
+    line-height: 1.6; }
+  .why .health .container {
+    padding: 4.6875em 0;
+    background: url(../images/health.svg) no-repeat right bottom;
+    background: url(../images/health.svg) no-repeat right bottom; }
+.why .mood {
+  height: auto;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #FF8A65;
+  background: #FF8A65;
+  color: #fdfdfd; }
+  .why .mood .title {
+    font-size: 3.375em;
+    text-transform: uppercase; }
+  .why .mood p {
+    max-width: 20em;
+    margin: 0;
+    color: #eee;
+    line-height: 1.6; }
+  .why .mood .container {
+    padding: 4.6875em 0;
+    background: url(../images/health.svg) no-repeat right bottom;
+    background: url(../images/health.svg) no-repeat right bottom; }
 
 /*# sourceMappingURL=main.css.map */

@@ -9,8 +9,9 @@
 		width: em(540px);
 		max-width: 90%;
 		@include margin(0 auto);
-
+	
 		color: $color-boulder;
+		font-weight: 600;
 		text-align: center;
 	}
 }
