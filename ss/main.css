@@ -467,6 +467,9 @@ html {
   .how .facebook {
     background: #536b96;
     background: #536b96; }
+    .how .facebook .container {
+      background: url(../images/Facebook.svg) no-repeat center left;
+      background: url(../images/Facebook.svg) no-repeat center left; }
     .how .facebook .title {
       margin: 0 0 0 auto;
       text-align: right; }

@@ -36,6 +36,10 @@
 
 	.facebook {
 		@include background(#536b96);
+		
+		.container {
+			@include background(url(../images/Facebook.svg) no-repeat center left);
+		}
 
 		.title {
 			@include margin(0 0 0 auto);
