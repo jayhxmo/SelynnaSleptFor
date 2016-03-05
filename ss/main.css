@@ -175,7 +175,7 @@ table {
                                           
 *****************************************************************
 ****************************************************************/
-.intro h1.time {
+.intro h1.time, .how section .text img, .how section .image img {
   -webkit-transition: all 175ms ease;
   -moz-transition: all 175ms ease;
   transition: all 175ms ease;

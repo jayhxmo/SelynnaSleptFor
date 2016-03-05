@@ -36,6 +36,8 @@
 				position: relative;
 				height: em(250px);
 				vertical-align: middle;
+				
+				@extend %transition;
 			}
 		}
 	}
