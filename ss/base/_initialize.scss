@@ -17,3 +17,15 @@ html, body {
 .vertical-center {
 	@include vertical-center;
 }
+
+section {
+	@include padding(em(25px) 0);
+}
+header {
+	h1 {
+		font-size: em(64px);
+		text-align: center;
+		text-transform: uppercase;
+		color: $color-tundora;
+	}
+}

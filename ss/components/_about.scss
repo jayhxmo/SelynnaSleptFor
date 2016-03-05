@@ -1,0 +1,16 @@
+.about {
+	@include size(100% 50%);
+
+	.vertical-center {
+		top: 35%;
+	}
+
+	p {
+		width: em(540px);
+		max-width: 90%;
+		@include margin(0 auto);
+
+		color: $color-boulder;
+		text-align: center;
+	}
+}

@@ -1,5 +1,5 @@
 .intro {
-	@include size(100% 85%);
+	@include size(100% 90%);
 	@include zero-box;
 	@include background($color-gallery);
 
@@ -7,9 +7,7 @@
 	text-transform: uppercase;
 
 	* {
-		@include margin(0);
 		color: $color-boulder;
-		font-weight: 800;
 	}
 	
 	h2.title {

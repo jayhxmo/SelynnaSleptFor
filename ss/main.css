@@ -212,6 +212,15 @@ html, body {
   -o-transform: translateY(-50%);
   transform: translateY(-50%); }
 
+section {
+  padding: 1.5625em 0; }
+
+header h1 {
+  font-size: 4em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #444; }
+
 html {
   font-size: 62.5%; }
   @media screen and (min-width: 33.75em) {
@@ -235,11 +244,11 @@ body {
   line-height: 1.25; }
 
 h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
   font-family: "brandon-grotesque", sans-serif;
-  font-weight: 300;
-  line-height: 1.25;
-  margin: 0 0 0.625em;
-  padding: 0; }
+  font-weight: 800;
+  line-height: 1.25; }
 
 h1 {
   font-size: 3em; }
@@ -261,8 +270,8 @@ h6 {
 
 p {
   font-family: "brandon-grotesque", sans-serif;
-  font-size: 1.125em;
-  font-weight: 400;
+  font-size: 1.75em;
+  font-weight: 600;
   line-height: 1.8; }
 
 a {
@@ -331,7 +340,7 @@ html {
     display: table; }
 
 .intro {
-  height: 85%;
+  height: 90%;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -340,9 +349,7 @@ html {
   text-align: center;
   text-transform: uppercase; }
   .intro * {
-    margin: 0;
-    color: #777;
-    font-weight: 800; }
+    color: #777; }
   .intro h2.title {
     font-size: 4.5em; }
   .intro h3 {
@@ -358,5 +365,20 @@ html {
     .intro h1.time:hover {
       margin: 0 auto 0.1875em;
       text-shadow: 0 0.3125em 0.625em rgba(0, 0, 0, 0.23); }
+
+.about {
+  height: 50%;
+  width: 100%; }
+  .about .vertical-center {
+    top: 35%; }
+  .about p {
+    width: 33.75em;
+    max-width: 90%;
+    margin: 0 auto;
+    color: #777;
+    text-align: center; }
+
+.why {
+  padding: 4.6875em 0 1.5625em; }
 
 /*# sourceMappingURL=main.css.map */
