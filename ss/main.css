@@ -451,7 +451,7 @@ html {
       color: #777;
       font-weight: 600; }
   .how section {
-    height: auto;
+    height: 26.25em;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -461,37 +461,50 @@ html {
       font-size: 3.375em;
       text-transform: uppercase; }
     .how section .container {
-      padding: 4.6875em 0; }
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%); }
+    .how section .text, .how section .image {
+      float: left;
+      display: block;
+      margin-right: 0%;
+      width: 50%; }
+      .how section .text:last-child, .how section .image:last-child {
+        margin-right: 0; }
+      .how section .text img, .how section .image img {
+        position: relative;
+        height: 15.625em;
+        vertical-align: middle; }
   .how .procrastination {
     background: #E57373;
     background: #E57373; }
-    .how .procrastination .container {
-      background: url(../images/Procrastination.svg) no-repeat center right;
-      background: url(../images/Procrastination.svg) no-repeat center right; }
+    .how .procrastination .image {
+      text-align: right; }
   .how .facebook {
     background: #536b96;
     background: #536b96; }
-    .how .facebook .container {
-      background: url(../images/Facebook.svg) no-repeat center left;
-      background: url(../images/Facebook.svg) no-repeat center left; }
     .how .facebook .title {
       margin: 0 0 0 auto;
       text-align: right; }
+    .how .facebook .image {
+      text-align: left; }
   .how .puzzles {
     background: #9881CC;
     background: #9881CC; }
-    .how .puzzles .container {
-      background: url(../images/Puzzles.svg) no-repeat center right;
-      background: url(../images/Puzzles.svg) no-repeat center right; }
+    .how .puzzles .image {
+      text-align: right; }
   .how .shower {
     background: #71C6CC;
     background: #71C6CC; }
-    .how .shower .container {
-      background: url(../images/shower.svg) no-repeat center left;
-      background: url(../images/shower.svg) no-repeat center left; }
     .how .shower .title {
       margin: 0 0 0 auto;
       text-align: right; }
+    .how .shower .image {
+      text-align: left; }
 
 .support {
   padding: 1.5625em 0 6.25em;

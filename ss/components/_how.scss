@@ -14,7 +14,7 @@
 	}
 
 	section {
-		@include size(100% auto);
+		@include size(100% em(420px));
 		@include zero-box;
 
 		color: $color-white;
@@ -26,49 +26,59 @@
 		}
 
 		.container {
-			@include padding(em(75px) 0);
+			@include vertical-center;
+		}
+
+		.text, .image {
+			@include span-columns(6);
+
+			img {
+				position: relative;
+				height: em(250px);
+				vertical-align: middle;
+			}
 		}
 	}
 
 	.procrastination {
 		@include background(#E57373);
 
-		.container {
-			@include background(url(../images/Procrastination.svg) no-repeat center right);
+		.image {
+			text-align: right;
 		}
 	}
 
 	.facebook {
 		@include background(#536b96);
-		
-		.container {
-			@include background(url(../images/Facebook.svg) no-repeat center left);
-		}
 
 		.title {
 			@include margin(0 0 0 auto);
 			text-align: right;
+		}
+
+		.image {
+			text-align: left;
 		}
 	}
 
 	.puzzles {
 		@include background(#9881CC);
 
-		.container {
-			@include background(url(../images/Puzzles.svg) no-repeat center right);
+		.image {
+			text-align: right;
 		}
 	}
 
 	.shower {
 		@include background(#71C6CC);
 	
-		.container {
-			@include background(url(../images/shower.svg) no-repeat center left);
-		}
-
 		.title {
 			@include margin(0 0 0 auto);
 			text-align: right;
+		}
+
+		.image {
+			text-align: left;
 		}
 	}
 }

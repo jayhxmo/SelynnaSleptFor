@@ -14,14 +14,14 @@
 	<body>
 		<section class="intro">
 			<div class="vertical-center">
-				<h2 class="title"><a href="#">Selynna</a> Slept For</h2>
+				<h2 class="title"><a href="http://www.selynnasun.me/">Selynna</a> Slept For</h2>
 				<h4>Only</h4>
 				<h1 class="time">3.1415926535</h1>
 				<h3>Hours</h3>
 			</div>
 		</section>
 
-		<section class="about">
+		<section class="about" data-center-top="opacity: 1" data-bottom-top="opacity: 0.33">
 			<div class="vertical-center">
 				<header>
 					<h1>That's not good!</h1>
@@ -30,34 +30,34 @@
 			</div>
 		</section>
 
-		<section class="why">
+		<section class="why" data-center-top="opacity: 1" data-bottom-top="opacity: 0.33">
 			<header>
 				<h1>But... why sleep?</h1>
 			</header>
 
 			<section class="health">
-				<div class="container">
+				<div class="container" data-center-top="background-position: right 0px" data-bottom-top="background-position: right 400px">
 					<h1 class="title">Better Health</h1>
 					<p>Getting a good night's sleep won't grant you immunity from disease. But sleep deprivation can cause some serious health problems like heart disease &amp; attacks, diabetes, and obesity.</p>
 				</div>
 			</section>
 
 			<section class="mood">
-				<div class="container">
+				<div class="container" data-center-top="background-position: left 0px" data-bottom-top="background-position: left 400px">
 					<h1 class="title">Better Mood</h1>
 					<p>Sleep deprivation can make you vulnerable to stress, irrtable, and short-tempered. Sleeping more is found to be linked with happier lives for most Americans, with less mood swings.</p>
 				</div>
 			</section>
 
 			<section class="focus">
-				<div class="container">
+				<div class="container" data-center-top="background-position: right 0px" data-bottom-top="background-position: right 400px">
 					<h1 class="title">Better focus</h1>
 					<p>Since you won't be so tired anymore, you'll be sleeping less during class. Not only that, sleeping more will improve your brain performance allowing you to learn better.</p>
 				</div>
 			</section>
 
 			<section class="life">
-				<div class="container">
+				<div class="container" data-center-top="background-position: left 0px" data-bottom-top="background-position: left 400px">
 					<h1 class="title">Better life</h1>
 					<p>Since you'll be healthier, happier, and working better, your life can show positive results. I mean, who can't appreciate more energy, less mood-swings and longer focus?</p>
 				</div>
@@ -69,24 +69,45 @@
 				<h1>But... how?</h1>
 				<p>I know! 9 hours is a lot. But on a daily basis, if you were to</p>
 			</header>
+			
 			<section class="procrastination">
-				<div class="container">
-					<h1 class="title">Stop procras-<br>tinating<br>on work</h1>
+				<div class="container" data-top="opacity: 0.5;" data-center-center="opacity: 1;">
+					<div class="text">
+						<h1 class="title">Stop procras-<br>tinating<br>on work</h1>
+					</div>
+					<div class="image">
+						<img src="images/procrastination.svg" alt="" data-center-top="bottom: 0px" data-bottom-top="bottom: -225px">
+					</div>
 				</div>
 			</section>
 			<section class="facebook">
-				<div class="container">
-					<h1 class="title">Get off of Facebook when you're working</h1>
+				<div class="container" data-top="opacity: 0.5;" data-center-center="opacity: 1;">
+					<div class="image">
+						<img src="images/facebook.svg" alt="" data-center-top="bottom: 0px" data-bottom-top="bottom: -225px">
+					</div>
+					<div class="text">
+						<h1 class="title">Get off of Facebook when you're working</h1>
+					</div>
 				</div>
 			</section>
 			<section class="puzzles">
-				<div class="container">
-					<h1 class="title">Stop playing so much puzzles and dragons</h1>
+				<div class="container" data-top="opacity: 0.5;" data-center-center="opacity: 1;">
+					<div class="text">
+						<h1 class="title">Stop playing so much puzzles and dragons</h1>
+					</div>
+					<div class="image">
+						<img src="images/puzzles.svg" alt="" data-center-top="bottom: 0px" data-bottom-top="bottom: -225px">
+					</div>
 				</div>
 			</section>
 			<section class="shower">
-				<div class="container">
-					<h1 class="title">Learn ninja techniques to shower faster</h1>
+				<div class="container" data-top="opacity: 0.5;" data-center-center="opacity: 1;">
+					<div class="image">
+						<img src="images/shower.svg" alt="" data-center-top="bottom: 0px" data-bottom-top="bottom: -225px">
+					</div>
+					<div class="text">
+						<h1 class="title">Learn ninja techniques to shower faster</h1>
+					</div>
 				</div>
 			</section>
 		</section>
@@ -105,16 +126,11 @@
 			<p>made by <a href="https://twitter.com/jayhxmo">a concerned friend</a> &middot; this website is <a href="https://github.com/jayhxmo/SelynnaSleptFor">open source</a></p>
 		</section>
 
-		<script type="text/javascript" src="js/jquery.min.js"></script>
-		<script type="text/javascript" src="js/jquery.easing.min.js"></script>
-		<script type="text/javascript" src="js/jquery.plusanchor.min.js"></script>
+		<script type="text/javascript" src="js/skrollr.min.js"></script>
 		<script type="text/javascript">
-			$(document).ready(function(){
-			    $('body').plusAnchor({
-			        easing: 'easeInOutExpo',
-			        speed:  700
-			    });
-			});
-		</script>
+	    	var s = skrollr.init({
+	    		forceHeight: false
+	    	});
+	    </script>
 	</body>
 </html>
