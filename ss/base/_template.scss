@@ -26,3 +26,8 @@
 		font-weight: nth($args, 2);
 	}
 }
+
+%transition {
+	@include transition(all $animation-duration $animation-timing);
+	-webkit-backface-visibility: hidden;
+}

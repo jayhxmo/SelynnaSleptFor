@@ -1,6 +1,7 @@
 html, body {
 	@include full-screen;
 	@include zero-box;
+	@include background($color-gallery);
 }
 
 .display-none {
@@ -11,4 +12,8 @@ html, body {
 .visible-none {
 	opacity: 0;
 	@include transition(all $animation-duration $animation-timing);
+}
+
+.vertical-center {
+	@include vertical-center;
 }

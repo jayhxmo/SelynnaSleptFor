@@ -1,0 +1,44 @@
+.intro {
+	@include size(100% 85%);
+	@include zero-box;
+	@include background($color-gallery);
+
+	text-align: center;
+	text-transform: uppercase;
+
+	* {
+		@include margin(0);
+		color: $color-boulder;
+		font-weight: 800;
+	}
+	
+	h2.title {
+		font-size: em(72px);
+	}
+
+	h3 {
+		font-size: em(48px);
+	}
+
+	h4 {
+		font-size: em(24px);
+	}
+
+	h1.time {
+		@include margin(em(1px) auto em(2px));
+		color: $color-tundora;
+		font-size: em(225px);
+		
+		text-shadow: 0 em(3px) em(3px) rgba(0, 0, 0, 0.25);
+		cursor: pointer;
+		
+		@extend %transition;
+
+		&:hover {
+			@include margin(0 auto em(3px));
+			text-shadow: 0 em(5px) em(10px) rgba(0, 0, 0, 0.23);
+		}
+	}
+
+
+}
