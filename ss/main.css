@@ -473,9 +473,15 @@ html {
   .how .puzzles {
     background: #9881CC;
     background: #9881CC; }
+    .how .puzzles .container {
+      background: url(../images/Puzzles.svg) no-repeat center right;
+      background: url(../images/Puzzles.svg) no-repeat center right; }
   .how .shower {
     background: #71C6CC;
     background: #71C6CC; }
+    .how .shower .container {
+      background: url(../images/shower.svg) no-repeat center left;
+      background: url(../images/shower.svg) no-repeat center left; }
     .how .shower .title {
       margin: 0 0 0 auto;
       text-align: right; }
