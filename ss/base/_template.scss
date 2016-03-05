@@ -1,0 +1,28 @@
+@mixin full-screen {
+	@include size(100% 100%);
+	min-height: 100%;
+	margin: 0;
+}
+
+@mixin vertical-parent {
+  @include transform-style(preserve-3d);
+}
+
+@mixin vertical-center {
+  @include position(relative, 50% null null null);
+  @include transform(translateY(-50%));
+}
+
+@mixin font-sw($args...) {
+	// IF length == 1: $size
+	// IF length == 2: $size, $weight
+
+	@if length($args) == 1 {
+		font-size: nth($args, 1);
+	}
+	
+	@else if length($args) == 2 {
+		font-size: nth($args, 1);
+		font-weight: nth($args, 2);
+	}
+}

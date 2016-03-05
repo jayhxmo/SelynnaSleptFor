@@ -1,0 +1,54 @@
+// Typography
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600|Nunito:400,300,700);
+
+html {
+  font-size: 62.5%;
+  @media screen and (min-width: $bp-sm) { font-size: 65%; }
+  @media screen and (min-width: $bp-md) { font-size: 70%; }
+  @media screen and (min-width: $bp-lg) { font-size: 80; }
+  @media screen and (min-width: $bp-xl) { font-size: 92.5%; }
+}
+
+body {
+  color: $color-black;
+  font-family: $body-font;
+  font-size: 1em;
+  font-weight: 300;
+  line-height: $body-lh;
+  
+}
+
+%header {
+	font-family: $body-font;
+	font-weight: 300;
+	line-height: $body-lh;
+	margin: 0 0 $sm-spacing;
+	padding: 0;
+}
+
+@for $index from 1 through length($font-sizes) {
+  $size: nth($font-sizes, $index);
+  h#{$index} {
+    @extend %header;
+    font-size: em($size);
+  }
+}
+
+p {
+  font-family: $body-font;
+  font-size: em(18px);
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+a {
+  color: $color-dodgerblue;
+  text-decoration: none;
+  transition: color $animation-duration $animation-timing;
+
+  &:active,
+  &:focus,
+  &:hover {
+    opacity: 0.8;
+  }
+}

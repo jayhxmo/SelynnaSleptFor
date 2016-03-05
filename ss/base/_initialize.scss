@@ -1,0 +1,14 @@
+html, body {
+	@include full-screen;
+	@include zero-box;
+}
+
+.display-none {
+	display: none;
+	@include transition(all $animation-duration $animation-timing);
+}
+
+.visible-none {
+	opacity: 0;
+	@include transition(all $animation-duration $animation-timing);
+}
