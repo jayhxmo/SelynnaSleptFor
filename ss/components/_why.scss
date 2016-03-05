@@ -3,11 +3,10 @@
 		@include margin(0 auto em(25px));
 	}
 
-	.health {
+	section {
 		@include size(100% auto);
 		@include zero-box;
 
-		@include background(#81C784);
 		color: $color-white;
 
 		.title {
@@ -24,32 +23,56 @@
 
 		.container {
 			@include padding(em(75px) 0);
+		}
+	}
+	
+	.health {
+		@include background(#81C784);
+
+		.container {
 			@include background(url(../images/health.svg) no-repeat right bottom);
 		}
 	}
 
 	.mood {
-		@include size(100% auto);
-		@include zero-box;
-
 		@include background(#FF8A65);
-		color: $color-white;
 
 		.title {
-			font-size: em(54px);
-			text-transform: uppercase;
+			text-align: right;
 		}
 
 		p {
-			max-width: em(320px);
-			@include margin(0);
-			color: $color-gallery;
-			line-height: 1.6;
+			@include margin(0 0 0 auto);
+			text-align: right;
 		}
 
 		.container {
-			@include padding(em(75px) 0);
-			@include background(url(../images/health.svg) no-repeat right bottom);
+			@include background(url(../images/mood.svg) no-repeat left bottom);
+		}
+	}
+
+	.focus {
+		@include background(#34495E);
+
+		.container {
+			@include background(url(../images/focus.svg) no-repeat right bottom);
+		}
+	}
+
+	.life {
+		@include background(#78909C);
+
+		.title {
+			text-align: right;
+		}
+
+		p {
+			@include margin(0 0 0 auto);
+			text-align: right;
+		}
+		
+		.container {
+			@include background(url(../images/life.svg) no-repeat left bottom);
 		}
 	}
 }

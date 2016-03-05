@@ -387,45 +387,55 @@ html {
 
 .why header {
   margin: 0 auto 1.5625em; }
-.why .health {
+.why section {
   height: auto;
   width: 100%;
   margin: 0;
   padding: 0;
-  background: #81C784;
-  background: #81C784;
   color: #fdfdfd; }
-  .why .health .title {
+  .why section .title {
     font-size: 3.375em;
     text-transform: uppercase; }
-  .why .health p {
+  .why section p {
     max-width: 20em;
     margin: 0;
     color: #eee;
     line-height: 1.6; }
+  .why section .container {
+    padding: 4.6875em 0; }
+.why .health {
+  background: #81C784;
+  background: #81C784; }
   .why .health .container {
-    padding: 4.6875em 0;
     background: url(../images/health.svg) no-repeat right bottom;
     background: url(../images/health.svg) no-repeat right bottom; }
 .why .mood {
-  height: auto;
-  width: 100%;
-  margin: 0;
-  padding: 0;
   background: #FF8A65;
-  background: #FF8A65;
-  color: #fdfdfd; }
+  background: #FF8A65; }
   .why .mood .title {
-    font-size: 3.375em;
-    text-transform: uppercase; }
+    text-align: right; }
   .why .mood p {
-    max-width: 20em;
-    margin: 0;
-    color: #eee;
-    line-height: 1.6; }
+    margin: 0 0 0 auto;
+    text-align: right; }
   .why .mood .container {
-    padding: 4.6875em 0;
-    background: url(../images/health.svg) no-repeat right bottom;
-    background: url(../images/health.svg) no-repeat right bottom; }
+    background: url(../images/mood.svg) no-repeat left bottom;
+    background: url(../images/mood.svg) no-repeat left bottom; }
+.why .focus {
+  background: #34495E;
+  background: #34495E; }
+  .why .focus .container {
+    background: url(../images/focus.svg) no-repeat right bottom;
+    background: url(../images/focus.svg) no-repeat right bottom; }
+.why .life {
+  background: #78909C;
+  background: #78909C; }
+  .why .life .title {
+    text-align: right; }
+  .why .life p {
+    margin: 0 0 0 auto;
+    text-align: right; }
+  .why .life .container {
+    background: url(../images/life.svg) no-repeat left bottom;
+    background: url(../images/life.svg) no-repeat left bottom; }
 
 /*# sourceMappingURL=main.css.map */
