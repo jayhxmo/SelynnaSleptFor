@@ -1,0 +1,58 @@
+.how {
+	@include size(100% auto);
+	@include padding(em(125px) 0);
+
+	header {
+		@include margin(0 auto em(25px));
+		text-align: center;
+
+		p {
+			@include margin(0);
+			color: $color-boulder;
+			font-weight: 600;
+		}
+	}
+
+	section {
+		@include size(100% auto);
+		@include zero-box;
+
+		color: $color-white;
+
+		.title {
+			max-width: em(120px);
+			font-size: em(54px);
+			text-transform: uppercase;
+		}
+
+		.container {
+			@include padding(em(75px) 0);
+		}
+	}
+
+	.procrastination {
+		@include background(#E57373);
+	}
+
+	.facebook {
+		@include background(#536b96);
+
+		.title {
+			@include margin(0 0 0 auto);
+			text-align: right;
+		}
+	}
+
+	.puzzles {
+		@include background(#9881CC);
+	}
+
+	.shower {
+		@include background(#71C6CC);
+
+		.title {
+			@include margin(0 0 0 auto);
+			text-align: right;
+		}
+	}
+}

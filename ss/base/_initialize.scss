@@ -21,6 +21,7 @@ html, body {
 section {
 	@include padding(em(25px) 0);
 }
+
 header {
 	h1 {
 		font-size: em(64px);

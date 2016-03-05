@@ -438,4 +438,46 @@ html {
     background: url(../images/life.svg) no-repeat left bottom;
     background: url(../images/life.svg) no-repeat left bottom; }
 
+.how {
+  height: auto;
+  width: 100%;
+  padding: 7.8125em 0; }
+  .how header {
+    margin: 0 auto 1.5625em;
+    text-align: center; }
+    .how header p {
+      margin: 0;
+      color: #777;
+      font-weight: 600; }
+  .how section {
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: #fdfdfd; }
+    .how section .title {
+      max-width: 7.5em;
+      font-size: 3.375em;
+      text-transform: uppercase; }
+    .how section .container {
+      padding: 4.6875em 0; }
+  .how .procrastination {
+    background: #E57373;
+    background: #E57373; }
+  .how .facebook {
+    background: #536b96;
+    background: #536b96; }
+    .how .facebook .title {
+      margin: 0 0 0 auto;
+      text-align: right; }
+  .how .puzzles {
+    background: #9881CC;
+    background: #9881CC; }
+  .how .shower {
+    background: #71C6CC;
+    background: #71C6CC; }
+    .how .shower .title {
+      margin: 0 0 0 auto;
+      text-align: right; }
+
 /*# sourceMappingURL=main.css.map */
