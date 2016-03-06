@@ -30,7 +30,7 @@
 		@include background(#81C784);
 
 		.container {
-			@include background(url(../images/health.svg) no-repeat right bottom);
+			@include background(url(../images/Health.svg) no-repeat right bottom);
 		}
 	}
 
@@ -47,7 +47,7 @@
 		}
 
 		.container {
-			@include background(url(../images/mood.svg) no-repeat left bottom);
+			@include background(url(../images/Mood.svg) no-repeat left bottom);
 		}
 	}
 
@@ -55,7 +55,7 @@
 		@include background(#34495E);
 
 		.container {
-			@include background(url(../images/focus.svg) no-repeat right bottom);
+			@include background(url(../images/Focus.svg) no-repeat right bottom);
 		}
 	}
 
@@ -72,7 +72,7 @@
 		}
 
 		.container {
-			@include background(url(../images/life.svg) no-repeat left bottom);
+			@include background(url(../images/Life.svg) no-repeat left bottom);
 		}
 	}
 

@@ -417,8 +417,8 @@ html {
   background: #81C784;
   background: #81C784; }
   .why .health .container {
-    background: url(../images/health.svg) no-repeat right bottom;
-    background: url(../images/health.svg) no-repeat right bottom; }
+    background: url(../images/Health.svg) no-repeat right bottom;
+    background: url(../images/Health.svg) no-repeat right bottom; }
 .why .mood {
   background: #FF8A65;
   background: #FF8A65; }
@@ -428,14 +428,14 @@ html {
     margin: 0 0 0 auto;
     text-align: right; }
   .why .mood .container {
-    background: url(../images/mood.svg) no-repeat left bottom;
-    background: url(../images/mood.svg) no-repeat left bottom; }
+    background: url(../images/Mood.svg) no-repeat left bottom;
+    background: url(../images/Mood.svg) no-repeat left bottom; }
 .why .focus {
   background: #34495E;
   background: #34495E; }
   .why .focus .container {
-    background: url(../images/focus.svg) no-repeat right bottom;
-    background: url(../images/focus.svg) no-repeat right bottom; }
+    background: url(../images/Focus.svg) no-repeat right bottom;
+    background: url(../images/Focus.svg) no-repeat right bottom; }
 .why .life {
   background: #78909C;
   background: #78909C; }
@@ -445,8 +445,8 @@ html {
     margin: 0 0 0 auto;
     text-align: right; }
   .why .life .container {
-    background: url(../images/life.svg) no-repeat left bottom;
-    background: url(../images/life.svg) no-repeat left bottom; }
+    background: url(../images/Life.svg) no-repeat left bottom;
+    background: url(../images/Life.svg) no-repeat left bottom; }
 @media screen and (max-width: 33.75em) {
   .why .container {
     background: none !important; } }
