@@ -70,9 +70,15 @@
 			@include margin(0 0 0 auto);
 			text-align: right;
 		}
-		
+
 		.container {
 			@include background(url(../images/life.svg) no-repeat left bottom);
+		}
+	}
+
+	.container {
+		@media screen and (max-width: $bp-sm) { 
+			background: none !important;
 		}
 	}
 }

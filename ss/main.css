@@ -372,6 +372,15 @@ html {
     .intro h1.time:hover {
       margin: 0 auto 0.1875em;
       text-shadow: 0 0.3125em 0.625em rgba(0, 0, 0, 0.23); }
+    @media screen and (max-width: 33.75em) {
+      .intro h1.time {
+        width: 90%;
+        font-size: 8em; } }
+  @media screen and (max-width: 33.75em) {
+    .intro {
+      width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis; } }
 
 .about {
   height: 50%;
@@ -438,6 +447,9 @@ html {
   .why .life .container {
     background: url(../images/life.svg) no-repeat left bottom;
     background: url(../images/life.svg) no-repeat left bottom; }
+@media screen and (max-width: 33.75em) {
+  .why .container {
+    background: none !important; } }
 
 .how {
   height: auto;
@@ -460,6 +472,9 @@ html {
       max-width: 7.5em;
       font-size: 3.375em;
       text-transform: uppercase; }
+      @media screen and (max-width: 33.75em) {
+        .how section .title {
+          max-width: 25em; } }
     .how section .container {
       position: relative;
       top: 50%;
@@ -479,6 +494,16 @@ html {
         position: relative;
         height: 15.625em;
         vertical-align: middle; }
+      @media screen and (max-width: 33.75em) {
+        .how section .text, .how section .image {
+          float: left;
+          display: block;
+          margin-right: 0%;
+          width: 100%; }
+          .how section .text:last-child, .how section .image:last-child {
+            margin-right: 0; }
+          .how section .text img, .how section .image img {
+            display: none; } }
   .how .procrastination {
     background: #E57373;
     background: #E57373; }
@@ -517,7 +542,7 @@ html {
     font-weight: 600; }
 
 .credits {
-  padding: 0.5625em 0;
+  padding: 0.5625em 0.3125em;
   background: #777;
   background: #777;
   text-align: center; }

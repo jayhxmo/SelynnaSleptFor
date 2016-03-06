@@ -14,7 +14,7 @@
 	<body>
 		<section class="intro">
 			<div class="vertical-center">
-				<h2 class="title"><a href="http://www.selynnasun.me/">Selynna</a> Slept For</h2>
+				<h2 class="title"><a href="https://twitter.com/selynyan">Selynna</a> Slept For</h2>
 				<h4>Only</h4>
 				<h1 class="time">3.1415926535</h1>
 				<h3>Hours</h3>
@@ -26,7 +26,7 @@
 				<header>
 					<h1>That's not good!</h1>
 				</header>
-				<p>The average amount of sleep that teenagers get is around 7 hours. However, studies have shown that teenagers need around 9 hours of sleep. Selynna, a teenager, gets 60 times less sleep than the required amount of sleep for teenagers.</p>
+				<p>The average amount of sleep that teenagers get is around 7 hours. However, studies have shown that teenagers need around 9 hours of sleep. Selynna, a teenager, gets [x] times less sleep than the required amount of sleep for teenagers.</p>
 			</div>
 		</section>
 
@@ -73,7 +73,7 @@
 			<section class="procrastination">
 				<div class="container" data-top="opacity: 0.5;" data-center-center="opacity: 1;">
 					<div class="text">
-						<h1 class="title">Stop procras-<br>tinating<br>on work</h1>
+						<h1 class="title">Stop procras-tinating<br>on work</h1>
 					</div>
 					<div class="image">
 						<img src="images/procrastination.svg" alt="" data-top="transform: rotate(45deg); right: -50%; opacity: 0.5;" data-center-bottom="opacity: 1; right: 0%;" data-center-top="bottom: 0px" data-bottom-top="bottom: -225px; transform: rotate(0deg);">
@@ -126,11 +126,22 @@
 			<p>made by <a href="https://twitter.com/jayhxmo">a concerned friend</a> &middot; this website is <a href="https://github.com/jayhxmo/SelynnaSleptFor">open source</a></p>
 		</section>
 
+		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script type="text/javascript" src="js/skrollr.min.js"></script>
 		<script type="text/javascript">
-	    	var s = skrollr.init({
-	    		forceHeight: false
-	    	});
+	    	$(function() {
+				var windowWidth = $(window).width();
+				if(windowWidth > 767){
+					skrollr.init({
+						forceHeight: false
+					});
+				}
+			});
+
+			var time = Math.random() * 3.5;
+			console.log(time);
+			$('.time').text(time.toFixed(8));
+			$('.about p').text('The average amount of sleep that teenagers get is around 7 hours. However, studies have shown that teenagers need around 9 hours of sleep. Selynna, a teenager, gets ' + (9 / time).toFixed(8) + ' times less sleep than the required amount of sleep for teenagers.');
 	    </script>
 	</body>
 </html>

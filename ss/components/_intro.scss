@@ -45,7 +45,16 @@
 			@include margin(0 auto em(3px));
 			text-shadow: 0 em(5px) em(10px) rgba(0, 0, 0, 0.23);
 		}
+
+		@media screen and (max-width: $bp-sm) { 
+			width: 90%;
+			font-size: em(128px);
+		}
 	}
 
-
+	@media screen and (max-width: $bp-sm) {
+		width: 100%;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
 }

@@ -1,5 +1,5 @@
 .credits {
-	@include padding(em(9px) 0);
+	@include padding(em(9px) em(5px));
 	@include background($color-boulder);
 	text-align: center;
 

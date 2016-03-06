@@ -23,6 +23,10 @@
 			max-width: em(120px);
 			font-size: em(54px);
 			text-transform: uppercase;
+
+			@media screen and (max-width: $bp-sm) { 
+				max-width: em(400px);
+			}
 		}
 
 		.container {
@@ -36,8 +40,16 @@
 				position: relative;
 				height: em(250px);
 				vertical-align: middle;
-				
+
 				@extend %transition;
+			}
+
+			@media screen and (max-width: $bp-sm) { 
+				@include span-columns(12);
+				
+				img {
+					display: none;
+				}
 			}
 		}
 	}
